@@ -1,5 +1,5 @@
 .widget-title {
-  background: transparent 0px center no-repeat url('images/Instagram-logo.png');
+  background: transparent 3px center no-repeat url('images/Instagram-logo.png');
   margin-top: 5px;
   padding: 10px 0;
 }
@@ -18,7 +18,7 @@
   font-style: italic;
   font-size: 2em;
   font-weight: 500;
-  padding-left: 35px;
+  padding-left: 40px;
   text-align: left;
 }
 .widget-profilepic {

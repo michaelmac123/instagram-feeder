@@ -1,0 +1,218 @@
+.widget-title {
+  background: transparent 35px center no-repeat url('images/Instagram-logo.png');
+  margin-top: 5px;
+  padding: 10px 0;
+}
+
+.header-title {
+  background: transparent 180px -1px no-repeat url('images/Instagram-Logo-text.png');
+  display: block;
+  margin-bottom: 5px;
+  width:100%;
+}
+
+.widget-title span {
+  color: #3f729b; /*Instagram blue*/
+  display: block;
+  font-family: 'Lato';
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 500;
+  padding-left: 25px;
+  text-align: center;
+}
+.widget-profilepic {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.widget-profilepic img{
+  height: 20px;
+  width: 20px;
+}
+
+.widget-username {
+  color: #3f729b; /*Instagram blue*/
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 300;
+  margin-left: 5px;
+  vertical-align: middle
+}
+.widget-screenname {
+  color: #3f729b; /*Instagram blue*/
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px 0 5px 3px;
+}
+.widget-caption {
+  border-top: 1px solid #e7e7e7;
+  color: #737373;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 500;
+  height: 100px;
+  margin-top: 8px;
+  overflow: hidden;
+  padding: 3px;
+  text-align: left;
+}
+
+.feeder-widget {
+  display: block;
+  height: 420px;
+  margin: 0 0 30px 0;
+  position: relative;
+  width: 100%;
+}
+
+#feeder-window {
+  overflow: hidden;
+  position: relative;
+}
+
+.feeder-widget ul {
+  margin: 0;
+  height: 410px;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.feeder-widget ul li {
+  height: 400px;
+  margin: 1%;
+  padding: 2% 1%;
+  position: absolute;
+  width: 97%;
+}
+
+.shown-widget {
+  -webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  backface-visibility: hidden;
+  perspective: 300px;
+}
+
+.active {
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 1s;
+  background: #FFFFFF;
+  /* Weird tracer box effect if this is a border instead Bug?*/
+  box-shadow: 0 0 0 1px #e7e7e7;
+  opacity: 1;
+  z-index: 1;
+
+}
+.hidden {
+  transform-style: preserve-3d;
+  transform: rotateY(-180deg);
+  transition: 1s;
+  background: #A8A8A8;
+  box-shadow: none;
+  opacity: 0;
+}
+
+button.control_prev,
+button.control_next {
+  border:none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  width: 60px;
+  height: 210px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+  position: absolute;
+  top: 20%;
+  z-index: 999;
+}
+
+button.control_prev:hover,
+button.control_next:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease;
+}
+
+button.control_prev {
+  -webkit-transition: all 500ms; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  background:transparent;
+  left:-25px;
+  opacity: 0;
+}
+
+button.control_prev span {
+  -webkit-transition: all 500ms; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  /*One Icon, two spots*/
+  -webkit-transform: rotate(180sdeg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  /*Instagram Blue*/
+  background:rgba(95, 169, 221, 0.55) 5px 20px url('images/chevron.png') no-repeat;
+  border-radius: 7%;
+  display: block;
+  height: 60px;
+  margin-left: -8px;
+  width: 30px;
+
+}
+
+button.control_next {
+  -webkit-transition: all 500ms; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  background:transparent;
+  opacity: 0;
+  right:-25px;
+}
+
+button.control_next span {
+  -webkit-transition: all 500ms; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  /*Instagram Blue*/
+  background:rgba(95, 169, 221, 0.55) 5px 20px url('images/chevron.png') no-repeat;
+  border-radius: 7%;
+  display: block;
+  height: 60px;
+  margin-left: 23px;
+  width: 30px;
+}
+button.control_prev span:hover,
+button.control_next span:hover {
+  -webkit-transition: all 500ms; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  background:rgba(58, 136, 190, 1) 5px 20px url('images/chevron.png') no-repeat;
+}
+
+.feeder-widget:hover button.control_prev,
+.feeder-widget:hover button.control_next {
+  -webkit-transition: all 500ms; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  opacity: 1;
+}
+
+.feeder-widget:hover button.control_prev {
+  left: -15px;
+}
+.feeder-widget:hover button.control_next {
+  right: -15px;
+}

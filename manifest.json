@@ -1,11 +1,12 @@
 {
-  // Default to the latest version of chrome extensions
-  "manifest_version": 2,
 
   // General ext info
   "name": "Instagram_Feeder",
   "description": "Navigate 15 most recent images with the Amazon hashtag",
-  "version": "1.0",
+  "version": "1.0.2",
+
+  // Default to the latest version of chrome extensions
+  "manifest_version": 2,
 
   // sets permissions that extension has
   "permissions": [

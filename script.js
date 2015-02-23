@@ -41,7 +41,7 @@ function addFeederWidget(addElementBefore, elementToAdd) {
   el1.className = "feeder-widget";
 
   // Add title content to widget
-  var spanEl = '<span>Recent images:</span>';
+  var spanEl = '<span>Recent images</span>';
   el1.innerHTML = '<h5 class="widget-title">' + spanEl + '</h5>';
 
   // Get Reference element
